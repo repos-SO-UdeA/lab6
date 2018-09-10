@@ -1,4 +1,4 @@
-# Laboratorio 5
+# Laboratorio 6
 
 > **Objetivos**:
 > * Comprender como manejar archivos en C.
