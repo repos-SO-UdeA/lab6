@@ -401,53 +401,9 @@ int fscanf(FILE *fp, const char *format, ...)
 
 La gran ventaja de esta funcion es que una vez se obtiene el dato del archivo la conversion se hace de manera transparente. Es decir no es necesario usar explicitamente alguna funcion de convierta datos tipo string a otro tipo de datos como enteros o reales por ejemplo. Esto, simplifica enormemente la etapa de procesamiento del problema.
 
-**Ejemplo**:
+**Ejemplo 8**: Hacer un programa que lea un archivo que contenga varios numeros enteros (uno por fila) y obtenga la suma y el promedio de estos los imprima en pantalla y los lleve a un archivo.
 
-1. Hacer un programa que lea un archivo que contenga varios numeros enteros (uno por fila) y obtenga la suma y el promedio de estos los imprima en pantalla y los lleve a un archivo.
-
-**Solución**: El archivo [read_write_line3.c](./code/read_write_line3.c) contiene la sulucion. A continuacion se muestra este por comodidad:
-
-```C
-#include <stdio.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-int main() {
-  char inFilename[80];
-  char outFilename[80] = "inventario_";
-  int tam = 0;
-  long long sum = 0;
-  int num;
-  double prom;
-  FILE *inFile;
-  FILE *outFile;
-  printf("Ingrese el nombre del archivo: ");
-  fflush(stdin);
-  scanf("%[^\n]s",inFilename); // Formato para que la entrada pueda aceptar espacios
-  inFile = fopen(inFilename,"r");
-  if (inFile == NULL) {
-    printf("Error al abrir el archivo %s\n", inFilename);
-    exit(-1);
-  }
-  while(fscanf(inFile,"%d",&num)!=EOF) {
-    printf("%d\n",num);
-    tam++;
-    sum += num;
-
-  }
-  fclose(inFile);
-  strcat(outFilename,inFilename);  
-  printf("\nSuma: %lld\n", sum);
-  prom = (double)sum/tam;
-  printf("Promedio: %.2lf\n", prom);
-  outFile = fopen(outFilename,"w");
-  fprintf(outFile, "Suma: %lld\n", sum);
-  fprintf(outFile, "Promedio: %.2lf\n", prom);
-  fclose(outFile);
-  exit(0);
-}
-```
+**Solución**: [enlace solucion](./code/ejemplo8)
 
 
 ## X. Enlaces:
