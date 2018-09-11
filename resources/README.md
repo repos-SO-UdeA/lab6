@@ -95,5 +95,5 @@ int main(int argc, char *argv[]) {
 
 Su trabajo consistirá en entender y adaptar codigo como este al problema.
 
-4. Crear una estructura en la cual cada uno de los campos se asocie a la información a desplegar. Se recomienda en caso de ser necesario repasar la [teoria](https://github.com/repos-SO-UdeA/laboratorios/blob/master/lab1/teoria/parte4/estructuras.ipynb), el [taller resuelto](https://github.com/repos-SO-UdeA/lab3/tree/master/talleres/parte_teorica2) y los [ejercicios de programación resueltos](https://github.com/repos-SO-UdeA/lab3/tree/master/talleres/ejercicios_resueltos).
-5. Enfoquese en hacer el programa lo mas modular posible creando funciones que manejen incluso estructuras. Recuerde los ejemplos analizados en el laboratorio donde se pasan o se retornan estructuras en funciones.
+3. Crear una estructura en la cual cada uno de los campos se asocie a la información a desplegar. Se recomienda en caso de ser necesario repasar la [teoria](https://github.com/repos-SO-UdeA/laboratorios/blob/master/lab1/teoria/parte4/estructuras.ipynb), el [taller resuelto](https://github.com/repos-SO-UdeA/lab3/tree/master/talleres/parte_teorica2) y los [ejercicios de programación resueltos](https://github.com/repos-SO-UdeA/lab3/tree/master/talleres/ejercicios_resueltos).
+4. Enfoquese en hacer el programa lo mas modular posible creando funciones que manejen incluso estructuras. Recuerde los ejemplos analizados en el laboratorio donde se pasan o se retornan estructuras en funciones.
